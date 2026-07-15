@@ -32,6 +32,7 @@ const env = loadEnv('', process.cwd())
 const hostname: string = env.VITE_HOSTNAME || 'http://localhost:4173'
 
 export default defineConfig({
+  ignoreDeadLinks: true,
   outDir: '../dist',
   lastUpdated: true,
   cleanUrls: true,
@@ -54,7 +55,7 @@ export default defineConfig({
         let publishedAt = releaseDateCache.get(tag)
         if (!publishedAt) {
           try {
-            const { data } = await octokit.repos.getReleaseByTag({ owner: 'mihonapp', repo: 'mihon', tag })
+            const { data } = await octokit.repos.getReleaseByTag({ owner: 'kumanode', repo: 'sugoi', tag })
             publishedAt = data.published_at || data.created_at || ''
             if (publishedAt)
               releaseDateCache.set(tag, publishedAt)

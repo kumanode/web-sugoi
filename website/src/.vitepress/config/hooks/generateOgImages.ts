@@ -106,11 +106,16 @@ async function generateOgImages(config: SiteConfig) {
 
   // Generate OG images for dynamic changelog pages
   const octokit = new Octokit()
-  const releases = await octokit.paginate(octokit.repos.listReleases, {
-    owner: 'mihonapp',
-    repo: 'mihon',
-    per_page: 100,
-  })
+  let releases = []
+  try {
+    releases = await octokit.paginate(octokit.repos.listReleases, {
+      owner: 'kumanode',
+      repo: 'sugoi',
+      per_page: 100,
+    })
+  } catch (e: any) {
+    console.warn('Failed to fetch releases for OG image generation:', e.message || e)
+  }
 
   for (const r of releases) {
     if (!r.tag_name)
