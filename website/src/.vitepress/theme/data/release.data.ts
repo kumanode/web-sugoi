@@ -1,31 +1,35 @@
-import type { GetResponseDataTypeFromEndpointMethod } from '@octokit/types'
-import { Octokit } from '@octokit/rest'
+import fs from 'node:fs'
+import path from 'node:path'
 import { defineLoader } from 'vitepress'
 
-const octokit = new Octokit()
-
-type GitHubRelease = GetResponseDataTypeFromEndpointMethod<typeof octokit.repos.getLatestRelease>
-
-export interface AppRelease {
-  stable: GitHubRelease
-  beta: GitHubRelease
-}
-
-declare const data: AppRelease
-export { data }
-
 export default defineLoader({
-  async load(): Promise<AppRelease> {
-    const { data: stable } = await octokit.repos.getLatestRelease({
-      owner: 'mihonapp',
-      repo: 'mihon',
-    })
+  async load() {
+    let latestTag = 'v1.0.0-Sugoi'
+    let latestDate = new Date().toISOString()
+    
+    try {
+      const xmlPath = path.resolve(__dirname, '../../../changelog_release.xml')
+      const xmlContent = fs.readFileSync(xmlPath, 'utf8')
+      const versionRegex = /<changelogversion\s+versionName="([^"]+)"\s+changeDate="([^"]*)"\s*>/
+      const match = versionRegex.exec(xmlContent)
+      if (match) {
+        latestTag = match[1]
+        latestDate = match[2] || latestDate
+      }
+    } catch (e) {
+      console.error('Failed to read version from changelog_release.xml:', e)
+    }
 
-    const { data: beta } = await octokit.repos.getLatestRelease({
-      owner: 'mihonapp',
-      repo: 'mihon-preview',
-    })
+    const dummyRelease = {
+      tag_name: latestTag,
+      published_at: latestDate,
+      html_url: `https://github.com/kumanode/sugoi/releases/tag/${latestTag}`,
+      assets: []
+    }
 
-    return { stable, beta }
+    return {
+      stable: dummyRelease,
+      beta: dummyRelease
+    }
   },
 })

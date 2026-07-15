@@ -3,11 +3,11 @@ title: Home
 layout: home
 
 hero:
-  name: Mihon
+  name: Sugoi
   text: Full-featured reader
   tagline: Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.
   image:
-    alt: Mihon Library Tab Dark
+    alt: Sugoi Library Tab Dark
     light: /home/phone.light.webp
     dark: /home/phone.dark.webp
   actions:
@@ -15,10 +15,10 @@ hero:
       text: Get started
       link: /docs/guides/getting-started
     - theme: alt
-      text: Download
+      text: Solana Seeker dApp Store
       link: /download/
 
-customMetaTitle: Mihon
+customMetaTitle: Sugoi
 
 features:
   - title: Tracking

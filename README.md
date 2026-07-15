@@ -1,10 +1,10 @@
 <div align="center">
 
 <a href="https://mihon.app">
-    <img src="./.github/assets/logo.png" alt="Mihon logo" title="Mihon logo" width="80"/>
+    <img src="./.github/assets/logo.png" alt="Sugoi logo" title="Sugoi logo" width="80"/>
 </a>
 
-# Mihon [Website](#)
+# Sugoi [Website](#)
 
 ### Full-featured reader
 Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.
@@ -29,7 +29,7 @@ If you got any questions, [join our Discord server](https://discord.gg/mihon).
 Thank you to all the people who have contributed!
 
 <a href="https://github.com/mihonapp/website/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=mihonapp/website" alt="Mihon website contributors" title="Mihon website contributors" width="600"/>
+    <img src="https://contrib.rocks/image?repo=mihonapp/website" alt="Sugoi website contributors" title="Sugoi website contributors" width="600"/>
 </a>
 
 ### Disclaimer
@@ -39,7 +39,7 @@ The developer(s) of this application does not have any affiliation with the cont
 ### License
 
 <pre>
-Copyright © 2024 The Mihon Open Source Project
+Copyright © 2024 The Sugoi Open Source Project
 
 This Source Code Form is subject to the terms of the Mozilla Public
 License, v. 2.0. If a copy of the MPL was not distributed with this

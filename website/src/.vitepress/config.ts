@@ -25,7 +25,7 @@ import themeConfig from './config/themeConfig'
 const octokit = new Octokit()
 const releaseDateCache = new Map<string, string>()
 
-const title = 'Mihon'
+const title = 'Sugoi'
 const description = 'Discover and read manga, webtoons, comics, and more – easier than ever on your Android device.'
 
 const env = loadEnv('', process.cwd())
@@ -68,8 +68,8 @@ export default defineConfig({
 
         const versionLabel = tag
         const desc = prettyDate
-          ? `Changelog for Mihon ${versionLabel}, released on ${prettyDate}`
-          : `Changelog for Mihon ${versionLabel}`
+          ? `Changelog for Sugoi ${versionLabel}, released on ${prettyDate}`
+          : `Changelog for Sugoi ${versionLabel}`
 
         pageData.frontmatter.description = pageData.frontmatter.description || desc
         pageData.title = pageData.frontmatter.title

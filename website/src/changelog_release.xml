@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog bulletedList="true">
+    <changelogversion versionName="v1.0.0-Sugoi" changeDate="">
+        <changelogtext>Sugoi app launched as a fork from TachiyomiAZ with enhanced features and performance</changelogtext>
+        <changelogtext>Available exclusively on dApp Store for a safer experience</changelogtext>
+        <changelogtext>Full migration from TachiyomiAZ to Sugoi version with improved UI</changelogtext>
+        <changelogtext>Support for various built-in manga sources and extensions</changelogtext>
+        <changelogtext>Backup and restore system compatible with other Tachiyomi forks</changelogtext>
+    </changelogversion>
+</changelog>

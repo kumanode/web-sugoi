@@ -1,6 +1,6 @@
 ---
 title: Changelogs
-description: Changelogs of all Mihon stable releases.
+description: Changelogs of all Sugoi stable releases.
 lastUpdated: false
 editLink: false
 prev: false
@@ -13,7 +13,7 @@ import ChangelogsList from "@theme/components/ChangelogsList.vue";
 
 # Changelogs
 
-Changelogs of all Mihon stable releases, which are also available [on GitHub](https://github.com/mihonapp/mihon/releases).<br>
+Changelogs of all Sugoi stable releases, which are also available [on GitHub](https://github.com/mihonapp/mihon/releases).<br>
 Beta releases can be seen [on GitHub](https://github.com/mihonapp/mihon-preview/releases).
 
 <ChangelogsList />

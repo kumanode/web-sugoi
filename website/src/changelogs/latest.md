@@ -1,6 +1,6 @@
 ---
 title: Latest Changelog
-description: Changelog of the latest version of Mihon.
+description: Changelog of the latest version of Sugoi.
 outline: false
 lastUpdated: false
 editLink: false

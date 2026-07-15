@@ -119,7 +119,7 @@ async function generateOgImages(config: SiteConfig) {
       url: `/changelogs/${r.tag_name}`,
       frontmatter: {
         // Prefer release name; fallback to tag
-        title: r.name || `Mihon ${r.tag_name.substring(1)}`,
+        title: r.name || `Sugoi ${r.tag_name.substring(1)}`,
         description: extractChangelogSnippet(r.body),
       } as any,
     }

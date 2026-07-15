@@ -1,4 +1,4 @@
-# Mihon Website Contributing Guide
+# Sugoi Website Contributing Guide
 
 Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
 

@@ -1,10 +1,10 @@
 {
-  "name": "mihon-website",
+  "name": "sugoi-website",
   "type": "module",
   "version": "3.0.0",
   "private": true,
   "packageManager": "pnpm@10.20.0",
-  "description": "Official website for the Mihon app.",
+  "description": "Official website for the Sugoi app.",
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
