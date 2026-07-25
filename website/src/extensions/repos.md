@@ -17,7 +17,7 @@ Watch this step-by-step video tutorial on how to add extension repositories and 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
   <iframe
-    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+    src="https://www.youtube-nocookie.com/embed/wemPCkUCyxo"
     title="Extension Repository Tutorial"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
