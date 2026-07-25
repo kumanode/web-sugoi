@@ -8,7 +8,7 @@ editLink: false
 
 Last updated: July 2026
 
-This page details our policies regarding the collection, use, and disclosure of Personal Information for anyone who decides to use our Service. 
+This page details our policies regarding the collection, use, and disclosure of Personal Information for anyone who decides to use our Service.
 
 By choosing to use our Service, you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used solely for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
 
@@ -23,7 +23,7 @@ We collect the following types of information:
 ## Solana Mobile Disclaimer
 
 If you downloaded the Service through the Solana Mobile dApp Store, please note:
-* **Non-Affiliation**: Solana Mobile and its affiliates are not responsible for the privacy practices or the content of our Service. 
+* **Non-Affiliation**: Solana Mobile and its affiliates are not responsible for the privacy practices or the content of our Service.
 * **Data Handling**: Solana Mobile does not have access to the data collected by our Service, nor is it responsible for the security or handling of such data. This Privacy Policy governs the relationship between you and us exclusively.
 
 ## Third-Party Services

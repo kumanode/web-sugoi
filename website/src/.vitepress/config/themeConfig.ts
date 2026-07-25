@@ -20,7 +20,7 @@ const themeConfig: DefaultTheme.Config = {
       icon: 'github',
       link: 'https://github.com/kumanode/sugoi',
       ariaLabel: 'Project GitHub',
-    }
+    },
   ],
 
   footer: {
@@ -43,7 +43,7 @@ const themeConfig: DefaultTheme.Config = {
   },
 
   search: {
-    provider: 'local'
+    provider: 'local',
   },
 }
 

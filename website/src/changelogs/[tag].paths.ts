@@ -8,12 +8,14 @@ export default {
       const xmlContent = fs.readFileSync(xmlPath, 'utf8')
       const versionRegex = /<changelogversion\s+versionName="([^"]+)"/g
       const tags = []
-      let match
-      while ((match = versionRegex.exec(xmlContent)) !== null) {
+      let match = versionRegex.exec(xmlContent)
+      while (match !== null) {
         tags.push(match[1])
+        match = versionRegex.exec(xmlContent)
       }
       return tags.map(tag => ({ params: { tag } }))
-    } catch (e) {
+    }
+    catch (e) {
       console.error('Failed to load paths from changelog_release.xml:', e)
       return []
     }

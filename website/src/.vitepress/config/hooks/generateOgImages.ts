@@ -113,7 +113,8 @@ async function generateOgImages(config: SiteConfig) {
       repo: 'sugoi',
       per_page: 100,
     })
-  } catch (e: any) {
+  }
+  catch (e: any) {
     console.warn('Failed to fetch releases for OG image generation:', e.message || e)
   }
 

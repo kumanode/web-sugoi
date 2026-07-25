@@ -7,28 +7,30 @@ export default defineLoader({
     let latestTag = 'v1.0.0-Sugoi'
     let latestDate = new Date().toISOString()
     let latestBody = '- Sugoi app launched'
-    
+
     try {
       const xmlPath = path.resolve(__dirname, '../../../changelog_release.xml')
       const xmlContent = fs.readFileSync(xmlPath, 'utf8')
-      
-      const versionRegex = /<changelogversion\s+versionName="([^"]+)"\s+changeDate="([^"]*)"\s*>([\s\S]*?)<\/changelogversion>/g
+
+      const versionRegex = /<changelogversion\s+versionName="([^"]+)"\s+changeDate="([^"]*)"\s*>([\s\S]*?)<\/changelogversion>/
       const textRegex = /<changelogtext>([\s\S]*?)<\/changelogtext>/g
-      
+
       const match = versionRegex.exec(xmlContent)
       if (match) {
         latestTag = match[1]
         latestDate = match[2] || latestDate
         const content = match[3]
-        
+
         const bullets = []
-        let textMatch
-        while ((textMatch = textRegex.exec(content)) !== null) {
+        let textMatch = textRegex.exec(content)
+        while (textMatch !== null) {
           bullets.push(textMatch[1].trim())
+          textMatch = textRegex.exec(content)
         }
         latestBody = bullets.map(b => `- ${b}`).join('\n')
       }
-    } catch (e) {
+    }
+    catch (e) {
       console.error('Failed to read version from changelog_release.xml:', e)
     }
 
@@ -39,13 +41,13 @@ export default defineLoader({
       assets: [],
       body: latestBody,
       author: {
-        login: 'kumanode'
-      }
+        login: 'kumanode',
+      },
     }
 
     return {
       stable: dummyRelease,
-      beta: dummyRelease
+      beta: dummyRelease,
     }
   },
 })

@@ -16,12 +16,12 @@ Beware that third-party repositories or extensions have full access to the app a
 Watch this step-by-step video tutorial on how to add extension repositories and install extensions in Mihon / Sugoi:
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 8px; margin: 1.5rem 0;">
-  <iframe 
-    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
-    title="Extension Repository Tutorial" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    allowfullscreen 
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+    title="Extension Repository Tutorial"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
   ></iframe>
 </div>
