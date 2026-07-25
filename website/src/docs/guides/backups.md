@@ -137,7 +137,7 @@ All forks have fork-specific settings and changes that are saved in their Backup
 - Forks of forks (such as [TachiyomiJ2K](/forks/TachiyomiJ2K/) and [Yōkai](/forks/Yokai/)) could restore some if not all fork-specific settings, but it is not guaranteed.
 - These fork-specific settings will not be restored in **Sugoi** and will be lost after restoring.
 
-Only [TachiyomiAZ](/forks/TachiyomiAZ/) supports creating/restoring both legacy `.json` backups and `.proto.gz` backups.
+Only [TachiyomiJ2K](/forks/TachiyomiJ2K/) supports creating/restoring both legacy `.json` backups and `.proto.gz` backups.
   > Users are recommended to update their `.json` backups to use the improved and efficient `.tachibk`/`.proto.gz` backups.
 
 Be aware of these limitations when dealing with backups in different **Sugoi** and **Tachiyomi** forks.

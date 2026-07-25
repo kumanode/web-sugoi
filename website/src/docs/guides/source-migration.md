@@ -86,18 +86,6 @@ You will need to remove these manually with a file manager.
 
     > If a series is not found, or is wrong you can manually search it by pressing **Overflow** -> **Search manually**.
 
-==TachiyomiAZ
-### Instructions {instructions-az}
-
-1. Tap into **Library**.
-1. Tap **Overflow** -> **Source migration**.
-1. Select the **Source** you'd like to migrate _from_ and select **All**.
-1. Select the **Sources** that you'd like to migrate _to_ and search by and tap the arrow at the bottom right.
-1. Choose which data you want to transfer over.
-1. Wait until all your **Series** is found and hit the done at the top and you're done.
-
-    > If a series is not found, or is wrong you can manually search it by pressing **Overflow** -> **Search manually**.
-
 ==Yokai
 ### Migrating multiple Series {#migrating-multiple-series-yokai}
 

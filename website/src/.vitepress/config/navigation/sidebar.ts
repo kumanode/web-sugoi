@@ -22,7 +22,7 @@ function defaultSidebar(): DefaultTheme.SidebarItem[] {
           link: '/changelogs/',
         },
         {
-          text: 'Extension Repos',
+          text: 'Extension Tutorial',
           link: '/extensions/repos',
         },
         {
