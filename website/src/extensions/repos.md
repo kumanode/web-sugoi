@@ -30,16 +30,9 @@ Watch this step-by-step video tutorial on how to add extension repositories and 
 
 ## Available Manga Repositories
 
-Here are the popular manga extension repositories. You can click **Install** to add them automatically on your Android device, or copy the manual repository URL.
+Here are the popular manga extension repositories. You can click **Add Repo (Sideload)** to add them automatically on your Android device, or copy the manual repository URL.
 
-| Repository | Sideload | Manual Repository JSON URL |
-| :--- | :---: | :--- |
-| **Keiyoushi** | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json) | `https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json` |
-| **Yūzōnō** | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/yuzono/manga-repo/repo/index.min.json) | `https://raw.githubusercontent.com/yuzono/manga-repo/repo/index.min.json` |
-| **Fucked by FAKKU** | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/mojuru/cursed-manga-repo/repo/index.min.json) | `https://raw.githubusercontent.com/mojuru/cursed-manga-repo/repo/index.min.json` |
-| **Kavita** | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json) | `https://raw.githubusercontent.com/Kareadita/tach-extension/repo/index.min.json` |
-| **Suwayomi** | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json) | `https://raw.githubusercontent.com/Suwayomi/tachiyomi-extension/repo/index.min.json` |
-| **copymanga-copy20** | [Install](tachiyomi://add-repo?url=https://raw.githubusercontent.com/LittleSurvival/copymanga-copy20/repo/index.min.json) | `https://raw.githubusercontent.com/LittleSurvival/copymanga-copy20/repo/index.min.json` |
+<RepoCards />
 
 ---
 
@@ -53,7 +46,7 @@ Here are the popular manga extension repositories. You can click **Install** to 
 3. Sugoi will automatically open and prompt: *"Add repository?"*. Tap **Add**.
 
 ### Manual Addition
-1. Copy the **Manual Repository JSON URL** from the table above (e.g., `https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.min.json`).
+1. Copy the **Manual Repository URL** from the table above (e.g., `https://raw.githubusercontent.com/keiyoushi/extensions/repo/index.pb`).
 2. Open **Sugoi** app.
 3. Navigate to **More** -> **Settings** -> **Browse**.
 4. Tap **Extension repos** -> **Add repository** (or `+` icon).

@@ -32,7 +32,7 @@ See the [Local source guide](/docs/guides/local-source/) for instructions.
 == External repositories
 External repositories add additional sources to **Sugoi**:
 * You can add external repositories by going to <nav to="browse"> and tapping **Extension repos**.
-* From there, you can input third-party repository links ending with `index.min.json`.
+* From there, you can input third-party repository links ending with `index.pb` or `index.min.json`.
 
 ::: danger Caution
 Sugoi will not provide resources for any unofficial repositories. Beware that any third-party repositories or extensions will have full access to the app and may contain malware.

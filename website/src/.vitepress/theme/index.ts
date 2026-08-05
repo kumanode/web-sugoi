@@ -10,6 +10,9 @@ import DefaultTheme from 'vitepress/theme'
 
 import Layout from './Layout.vue'
 
+import HeroImageTilt from './components/HeroImageTilt.vue'
+import RepoCards from './components/RepoCards.vue'
+
 import analytics from './plugin/analytics'
 
 // Import Stylus files
@@ -25,6 +28,8 @@ export default {
     app.component('IconDownload', IconDownload)
     app.component('IconNewspaperVariant', IconNewspaperVariant)
     app.component('IconBugReport', IconBugReport)
+    app.component('RepoCards', RepoCards)
+    app.component('HeroImageTilt', HeroImageTilt)
     analytics({ id: 'G-KN9GHR5EKT' })
   },
   Layout,
