@@ -175,24 +175,24 @@ function getInstallUrl(url: string) {
             :href="getInstallUrl(repo.url)" 
             class="action-btn install-btn"
           >
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
-            Add Repo (Sideload)
+            Add repo
           </a>
 
           <button 
             @click="copyToClipboard(repo.url, repo.id)" 
             :class="['action-btn', 'copy-btn', { copied: copiedId === repo.id }]"
           >
-            <svg v-if="copiedId !== repo.id" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <svg v-if="copiedId !== repo.id" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
             </svg>
-            <svg v-else viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+            <svg v-else viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="20 6 9 17 4 12"></polyline>
             </svg>
-            {{ copiedId === repo.id ? 'Copied!' : 'Copy URL' }}
+            {{ copiedId === repo.id ? 'Copied!' : 'Copy' }}
           </button>
         </div>
       </div>
@@ -406,11 +406,11 @@ function getInstallUrl(url: string) {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  padding: 0.5rem 0.9rem;
-  border-radius: 8px;
-  font-size: 0.84rem;
-  font-weight: 600;
+  gap: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
   text-decoration: none !important;
   cursor: pointer;
   transition: all 0.2s ease;
