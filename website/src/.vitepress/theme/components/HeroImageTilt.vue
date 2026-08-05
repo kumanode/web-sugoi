@@ -25,7 +25,7 @@ function handleMouseMove(e: MouseEvent) {
   const rotateY = ((x - centerX) / centerX) * 12
   
   transformStyle.value = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) scale3d(1.03, 1.03, 1.03)`
-  glowStyle.value = `${x}px ${y}px 60px rgba(124, 58, 237, 0.25)`
+  glowStyle.value = '0 16px 32px -8px rgba(0, 0, 0, 0.2)'
 }
 
 function handleMouseLeave() {

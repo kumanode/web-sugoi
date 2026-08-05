@@ -303,9 +303,13 @@ function getInstallUrl(url: string) {
 }
 
 .repo-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-2px);
   border-color: var(--vp-c-brand-1);
-  box-shadow: 0 10px 25px -5px rgba(84, 117, 158, 0.2);
+  box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.08);
+}
+
+.dark .repo-card:hover {
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4);
 }
 
 .card-header {
@@ -325,37 +329,38 @@ function getInstallUrl(url: string) {
 
 .repo-name {
   margin: 0;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.05rem;
+  font-weight: 600;
   color: var(--vp-c-text-1);
 }
 
 .badge {
   padding: 0.15rem 0.5rem;
   border-radius: 6px;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 .badge-primary {
-  background-color: rgba(16, 185, 129, 0.15);
-  color: #10b981;
+  background-color: var(--vp-c-green-soft);
+  color: var(--vp-c-green-1);
 }
 
 .badge-community {
-  background-color: rgba(99, 102, 241, 0.15);
-  color: #6366f1;
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
 }
 
 .badge-warning {
-  background-color: rgba(245, 158, 11, 0.15);
-  color: #f59e0b;
+  background-color: var(--vp-c-yellow-soft);
+  color: var(--vp-c-yellow-1);
 }
 
 .badge-info {
-  background-color: rgba(59, 130, 246, 0.15);
-  color: #3b82f6;
+  background-color: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-2);
 }
 
 .format-badge {
@@ -365,6 +370,7 @@ function getInstallUrl(url: string) {
   padding: 0.2rem 0.45rem;
   border-radius: 4px;
   color: var(--vp-c-text-2);
+  border: 1px solid var(--vp-c-divider);
 }
 
 .repo-desc {
@@ -381,6 +387,7 @@ function getInstallUrl(url: string) {
   padding: 0.5rem 0.75rem;
   margin-bottom: 1rem;
   overflow: hidden;
+  border: 1px solid var(--vp-c-divider);
 }
 
 .url-preview code {
@@ -417,7 +424,7 @@ function getInstallUrl(url: string) {
 }
 
 .install-btn:hover {
-  background-color: var(--vp-c-brand-dark);
+  background-color: var(--vp-c-brand-2);
 }
 
 .copy-btn {
@@ -432,8 +439,8 @@ function getInstallUrl(url: string) {
 }
 
 .copy-btn.copied {
-  background-color: rgba(16, 185, 129, 0.15);
-  color: #10b981;
-  border-color: #10b981;
+  background-color: var(--vp-c-green-soft);
+  color: var(--vp-c-green-1);
+  border-color: var(--vp-c-green-1);
 }
 </style>
