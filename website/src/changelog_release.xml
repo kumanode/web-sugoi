@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelog bulletedList="true">
+    <changelogversion versionName="v1.0.2-Sugoi" changeDate="2026-08-06">
+        <changelogtext>Integrated Solana Mobile Wallet Adapter (MWA) for secure wallet auth and tipping flow</changelogtext>
+        <changelogtext>Added SponsorController Compose screen and SolanaRpcHelper for on-chain SOL balance sync and transaction verification</changelogtext>
+        <changelogtext>Redesigned UI with Material 3 Expressive buttons and Card Containers for Extensions and Recents</changelogtext>
+        <changelogtext>Fixed GlobalScope memory leak in DownloadManager using structured coroutine scope and added batch retry</changelogtext>
+        <changelogtext>Added network-adaptive page prefetching in reader based on connection speed (WiFi vs Mobile)</changelogtext>
+        <changelogtext>Added SQLite index on manga title for faster library search and query performance</changelogtext>
+        <changelogtext>Implemented daily reading streak counter calculation and display in Stats view</changelogtext>
+        <changelogtext>Added automatic signature trust for extensions sharing developer signature</changelogtext>
+        <changelogtext>Added full cover zoom and multi-tag chip selection in manga details</changelogtext>
+        <changelogtext>Upgraded Target SDK to Android 15 (Target SDK 36) and updated baseline profiles</changelogtext>
+    </changelogversion>
     <changelogversion versionName="v1.0.1-Sugoi" changeDate="2026-08-05">
         <changelogtext>Integrated Solana Mobile Wallet Adapter (MWA) for web3 auth and tipping flow</changelogtext>
         <changelogtext>Added SolanaRpcHelper for fetching on-chain SOL balance and transaction status</changelogtext>
